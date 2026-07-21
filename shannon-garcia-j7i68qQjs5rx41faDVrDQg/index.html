@@ -16,12 +16,13 @@ html,body{margin:0}
 body{background:var(--paper);color:var(--ink);font-family:-apple-system,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
 .wrap{max-width:640px;margin:0 auto;padding:28px 20px 48px}
 .brandbar{height:4px;background:var(--red);border-radius:2px;margin-bottom:16px}
-.hero{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:12px;margin-bottom:18px;display:block;background:var(--cloud)}
+.hero{width:60%;max-width:280px;aspect-ratio:4/3;object-fit:cover;border-radius:12px;margin:0 auto 20px;display:block;background:var(--cloud)}
 .brand-mark svg{height:26px;width:auto;display:block}
 .brand-mark svg path:not(.cls-1){fill:var(--ink)}
-.eyebrow{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:11px;color:var(--red);margin:16px 0 4px}
-h1{font-size:24px;font-weight:800;margin:0 0 4px;letter-spacing:-.01em}
-.sub{font-size:14px;color:var(--slate);margin-bottom:20px}
+.eyebrow{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13px;color:var(--red);margin:18px 0 6px}
+.kind-tag{font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:10.5px;color:var(--slate);margin-bottom:20px}
+h1{font-size:32px;font-weight:800;margin:0 0 8px;letter-spacing:-.01em}
+.sub{font-size:19px;font-weight:600;color:var(--charcoal);margin-bottom:6px}
 .summary{background:var(--red-tint);border-radius:10px;padding:14px 16px;font-size:14.5px;font-weight:600;color:var(--red-deep);margin-bottom:20px}
 .stats-row{display:flex;gap:10px;margin-bottom:24px}
 .stat{flex:1;background:var(--white);border:1px solid var(--cloud);border-radius:10px;padding:12px;text-align:center}
@@ -49,7 +50,6 @@ h2{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;c
 <body>
   <div class="wrap">
     <div class="brandbar"></div>
-    <img class="hero" src="photo/1174_liberty_cover.jpg" alt="1174 Liberty Dr listing photo">
     <div class="brand-mark"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -131,9 +131,11 @@ h2{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;c
      d="M292.4208,17.66a2.7952,2.7952,0,0,1,1.3389.352,2.5009,2.5009,0,0,1,1.0176,1.0069,2.7388,2.7388,0,0,1,.0058,2.7192,2.5338,2.5338,0,0,1-1.0068,1.0088,2.739,2.739,0,0,1-2.7109,0,2.5429,2.5429,0,0,1-1.0079-1.0088,2.7228,2.7228,0,0,1,.0049-2.7192,2.5111,2.5111,0,0,1,1.02-1.0069A2.7948,2.7948,0,0,1,292.4208,17.66Zm0,.4512a2.3169,2.3169,0,0,0-1.1172.2944,2.1082,2.1082,0,0,0-.85.8408,2.2626,2.2626,0,0,0-.0049,2.2661,2.1316,2.1316,0,0,0,.8418.8408,2.2693,2.2693,0,0,0,2.26,0,2.1285,2.1285,0,0,0,.8408-.8408,2.272,2.272,0,0,0-.0058-2.2661,2.0911,2.0911,0,0,0-.85-.8408A2.3211,2.3211,0,0,0,292.4208,18.1115ZM291.2265,21.89V18.96h1.0068a2.4633,2.4633,0,0,1,.7471.0811.727.727,0,0,1,.3682.2832.7568.7568,0,0,1,.1367.43.7827.7827,0,0,1-.2285.56.9062.9062,0,0,1-.6084.2666.8055.8055,0,0,1,.249.1553,3.3482,3.3482,0,0,1,.4326.581l.3574.5738H293.11l-.26-.4619a2.3841,2.3841,0,0,0-.4941-.6822.6116.6116,0,0,0-.3789-.1006h-.2784V21.89Zm.4726-1.649h.5743a.9221.9221,0,0,0,.5605-.123.4193.4193,0,0,0,.0781-.5571.437.437,0,0,0-.2-.1538,1.5069,1.5069,0,0,0-.4746-.05h-.5381Z" />
 </svg>
 </div>
-    <div class="eyebrow">Listing Status</div>
+    <div class="eyebrow">Client Portal</div>
     <h1>Shannon Garcia, Juvenal Garcia</h1>
     <div class="sub">1174 Liberty Dr</div>
+    <div class="kind-tag">Listing Status</div>
+    <img class="hero" src="photo/1174_liberty_cover.jpg" alt="1174 Liberty Dr listing photo">
 
     <div class="summary">Under contract — accepted 7/11 at $325,000 (list was $315,000). Buyer&#x27;s inspection response is in; our reply is due 7/24. Closing targeted for 8/17.</div>
     <div class="stats-row"><div class="stat"><div class="v">Pending</div><div class="l">Status</div></div><div class="stat"><div class="v">$315,000</div><div class="l">Price</div></div><div class="stat"><div class="v">2</div><div class="l">Days on Market</div></div></div>
