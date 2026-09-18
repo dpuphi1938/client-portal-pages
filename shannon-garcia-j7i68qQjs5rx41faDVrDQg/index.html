@@ -303,7 +303,7 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
     var data = new FormData(form);
     var payload = {slug: 'shannon-garcia-j7i68qQjs5rx41faDVrDQg', kind: 'utility_add'};
     ['category','provider','phone','website','notes'].forEach(function(k){ payload[k] = data.get(k) || null; });
-    fetch('https://REPLACE-WITH-YOUR-WORKER-URL.workers.dev', {
+    fetch('https://transaction-portal-submissions.scottwhite2011.workers.dev', {
       method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(payload)
     }).then(function(r){
       if (!r.ok) throw new Error('bad response');
