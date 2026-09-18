@@ -186,7 +186,7 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
     <div class="countdown" id="closing-countdown" data-closing="2026-08-17">
       <div class="cd-num" id="cd-num">&nbsp;</div>
       <div class="cd-label" id="cd-label">&nbsp;</div>
-      <div class="cd-date">Closing scheduled 08/17/2026</div>
+      <div class="cd-date" id="cd-date">Closing scheduled 08/17/2026</div>
     </div>
     <script>
     (function(){
@@ -194,11 +194,17 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
       var closingDate = new Date(el.getAttribute('data-closing') + 'T00:00:00');
       var today = new Date(); today.setHours(0,0,0,0);
       var diff = Math.round((closingDate - today) / 86400000);
-      var num = document.getElementById('cd-num'), lbl = document.getElementById('cd-label');
+      var num = document.getElementById('cd-num'), lbl = document.getElementById('cd-label'), dt = document.getElementById('cd-date');
+      var dateStr = closingDate.toLocaleDateString('en-US', {month:'2-digit', day:'2-digit', year:'numeric'});
       if (diff > 1) { num.textContent = diff; lbl.textContent = 'Days to Closing'; }
       else if (diff === 1) { num.textContent = '1'; lbl.textContent = 'Day to Closing'; }
       else if (diff === 0) { num.textContent = String.fromCodePoint(127881); lbl.textContent = 'Closing Today!'; }
-      else { el.classList.add('closed'); num.textContent = String.fromCodePoint(9989); lbl.textContent = 'Closed'; }
+      else {
+        el.classList.add('closed');
+        num.textContent = String.fromCodePoint(9989);
+        lbl.textContent = 'Closed';
+        dt.textContent = 'Closed ' + dateStr;
+      }
     })();
     </script>
 
