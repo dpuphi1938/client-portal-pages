@@ -50,9 +50,14 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 .doclist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
 .doc{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--white);border:1px solid var(--cloud);border-radius:var(--radius);padding:12px 14px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:box-shadow .15s ease,transform .15s ease}
 .doc:hover,.doc:active{box-shadow:var(--shadow-hover);transform:translateY(-1px)}
+.doc .meta{display:flex;flex-direction:column;gap:3px;min-width:0}
 .doc .label{font-weight:600;font-size:14px}
 .doc .badge{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--slate);white-space:nowrap}
 .doc .arrow{color:var(--red);font-weight:700}
+.status-pill{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px;width:fit-content}
+.status-pill.good{background:var(--good-tint);color:var(--good)}
+.status-pill.pending{background:#FFF3D6;color:#8A5A00}
+.status-pill.bad{background:var(--bad-tint);color:var(--bad)}
 .footnote{margin-top:36px;padding-top:16px;border-top:1px solid var(--cloud);font-size:11px;color:var(--mist);line-height:1.6}
 
 .section-intro{font-size:13px;color:var(--slate);margin:-8px 0 12px;line-height:1.5}
@@ -298,7 +303,7 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 
     <div class="staff-section">
       <h3>Documents</h3>
-      <ul class="staff-list"><li><span class="staff-item-label">Purchase Agreement &amp; Counters (Signed)</span><span class="staff-item-meta">link</span></li><li><span class="staff-item-label">Seller&#x27;s Disclosure (Signed)</span><span class="staff-item-meta">link</span></li><li><span class="staff-item-label">Appraisal Report</span><span class="staff-item-meta">file</span></li><li><span class="staff-item-label">Buyer&#x27;s Inspection Response</span><span class="staff-item-meta">file</span></li><li><span class="staff-item-label">Utilities &amp; HOA Info</span><span class="staff-item-meta">file</span></li><li><span class="staff-item-label">HOA Bylaws</span><span class="staff-item-meta">file</span></li><li><span class="staff-item-label">HOA Covenants &amp; Restrictions</span><span class="staff-item-meta">file</span></li></ul>
+      <ul class="staff-list"><li><span class="staff-item-label">Purchase Agreement &amp; Counters (Signed)</span><span class="staff-item-meta">link &middot; Signed by both parties 09/09/2026</span></li><li><span class="staff-item-label">Seller&#x27;s Disclosure (Signed)</span><span class="staff-item-meta">link</span></li><li><span class="staff-item-label">Appraisal Report</span><span class="staff-item-meta">file</span></li><li><span class="staff-item-label">Buyer&#x27;s Inspection Response</span><span class="staff-item-meta">file</span></li><li><span class="staff-item-label">Utilities &amp; HOA Info</span><span class="staff-item-meta">file</span></li><li><span class="staff-item-label">HOA Bylaws</span><span class="staff-item-meta">file</span></li><li><span class="staff-item-label">HOA Covenants &amp; Restrictions</span><span class="staff-item-meta">file</span></li></ul>
       <div class="staff-row">
         <label>Label<input type="text" id="dl-label" placeholder="e.g. Purchase Agreement (Signed)"></label>
         <label>DocuSign / External URL<input type="text" id="dl-url"></label>
