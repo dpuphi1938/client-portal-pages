@@ -265,7 +265,7 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 
     <h2>Documents</h2><div class="doclist"><a class="doc" href="https://account.docusign.com/" target="_blank" rel="noopener"><span class="label">Purchase Contract (Signed)</span><span class="badge">Via DocuSign <span class="arrow">&rarr;</span></span></a><a class="doc" href="documents/bldr_option_summary.pdf" target="_blank" rel="noopener"><span class="label">Builder Option Summary</span><span class="badge">Document <span class="arrow">&rarr;</span></span></a><a class="doc" href="documents/closing_dates.pdf" target="_blank" rel="noopener"><span class="label">Closing Dates &amp; Times</span><span class="badge">Document <span class="arrow">&rarr;</span></span></a></div>
 
-    
+    <h2>Utilities</h2><p class="section-intro">Call each of these before closing to start service in your name. Check them off as you go &mdash; your progress is saved on this device.</p><ul class="util-list"><li class="util-row checkable" id="row-util-0" data-category="Gas"><input type="checkbox" id="util-0" ><label for="util-0"><div class="util-top"><span class="util-provider">CenterPoint Energy</span><span class="util-cat">Gas</span></div><div class="util-links"><a href="tel:800-227-1376">800-227-1376</a></div></label></li><li class="util-row checkable" id="row-util-1" data-category="Electric"><input type="checkbox" id="util-1" ><label for="util-1"><div class="util-top"><span class="util-provider">Duke Energy Indiana</span><span class="util-cat">Electric</span></div><div class="util-links"><a href="tel:800-521-2232">800-521-2232</a></div></label></li><li class="util-row checkable" id="row-util-2" data-category="Water"><input type="checkbox" id="util-2" ><label for="util-2"><div class="util-top"><span class="util-provider">Indiana American Water</span><span class="util-cat">Water</span></div><div class="util-links"><a href="tel:800-492-8373">800-492-8373</a></div></label></li><li class="util-row checkable" id="row-util-3" data-category="Sewer"><input type="checkbox" id="util-3" ><label for="util-3"><div class="util-top"><span class="util-provider">City of Franklin</span><span class="util-cat">Sewer</span></div><div class="util-links"><a href="tel:317-736-3640">317-736-3640</a></div></label></li><li class="util-row checkable" id="row-util-4" data-category="Internet"><input type="checkbox" id="util-4" ><label for="util-4"><div class="util-top"><span class="util-provider">Metronet</span><span class="util-cat">Internet</span></div><div class="util-notes">AT&amp;T and Xfinity/Comcast also available</div></label></li></ul>
 
     
 
@@ -279,5 +279,32 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
       Last updated 2026-09-18. This page is private to you &mdash; please don't share the link.
     </div>
   </div>
+<script>
+(function(){
+  var STORAGE_KEY = 'utilities-ian-mcpike-onfO7Q871nobXiBTfviZ_A';
+  var boxes = Array.prototype.slice.call(document.querySelectorAll('.util-row.checkable input[type=checkbox]'));
+  function load(){ try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch(e) { return {}; } }
+  function save(state){ try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch(e) {} }
+  function setRowState(box){ box.closest('.util-row').classList.toggle('done', box.checked); }
+  function submit(row, checked){
+    var payload = {slug: 'ian-mcpike-onfO7Q871nobXiBTfviZ_A', kind: 'utility_toggle', category: row.getAttribute('data-category'), called: checked};
+    fetch('https://transaction-portal-submissions.scottwhite2011.workers.dev', {
+      method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(payload)
+    }).catch(function(){ /* best-effort -- localStorage above already saved the click locally regardless */ });
+  }
+  var state = load();
+  boxes.forEach(function(box){
+    if (state[box.id]) box.checked = true;
+    setRowState(box);
+    box.addEventListener('change', function(){
+      var s = load();
+      s[box.id] = box.checked;
+      save(s);
+      setRowState(box);
+      submit(box.closest('.util-row'), box.checked);
+    });
+  });
+})();
+</script>
 </body>
 </html>
