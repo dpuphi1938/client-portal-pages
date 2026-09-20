@@ -62,9 +62,32 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 .cal-subscribe:hover{text-decoration:underline}
 .tgcal{font-size:11px;font-weight:600;color:var(--slate);text-decoration:none;white-space:nowrap;margin-left:8px}
 .tgcal:hover{color:var(--red-dark);text-decoration:underline}
+.home-value{background:var(--white);border:1px solid var(--cloud);border-radius:var(--radius);padding:18px 16px;box-shadow:var(--shadow);margin-bottom:20px}
+.hv-estimate{font-size:26px;font-weight:800;color:var(--ink)}
+.hv-sub{font-size:12px;color:var(--slate);margin-top:4px}
+.hv-gain{font-size:13.5px;font-weight:600;margin-top:10px}
+.hv-gain.positive{color:var(--good)}
+.hv-note{font-size:11.5px;color:var(--slate);margin-top:8px;font-style:italic}
+.comps-block{background:var(--white);border:1px solid var(--cloud);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);margin-top:-8px;margin-bottom:20px}
+.comps-chart{margin-bottom:6px}
+.comps-table{width:100%;border-collapse:collapse;font-size:12px;margin-top:10px}
+.comps-table th{text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.03em;color:var(--slate);font-weight:600;padding:6px 8px;border-bottom:1px solid var(--cloud)}
+.comps-table td{padding:7px 8px;border-bottom:1px solid var(--cloud);color:var(--charcoal);white-space:nowrap}
+.comps-table tr:last-child td{border-bottom:0}
+.me-row{display:flex;justify-content:space-between;align-items:baseline;font-size:13.5px}
+.me-row .me-label{color:var(--charcoal);font-weight:600}
+.me-row .me-val{font-weight:800;font-size:16px;color:var(--ink)}
+.me-row.highlight .me-val{color:var(--good)}
+.me-foot{font-size:11px;color:var(--slate);margin-top:10px;line-height:1.5}
+.hv-history{list-style:none;margin:14px 0 0;padding:12px 0 0;border-top:1px solid var(--cloud);display:flex;flex-direction:column;gap:6px}
+.hv-history li{font-size:12px;color:var(--slate);display:flex;justify-content:space-between}
 .footnote{margin-top:36px;padding-top:16px;border-top:1px solid var(--cloud);font-size:11px;color:var(--mist);line-height:1.6}
 
 .section-intro{font-size:13px;color:var(--slate);margin:-8px 0 12px;line-height:1.5}
+.resource-grid{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}
+.resource-card{background:var(--white);border:1px solid var(--cloud);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow)}
+.resource-title{font-weight:700;font-size:14px;color:var(--ink);margin-bottom:5px}
+.resource-body{font-size:13px;color:var(--charcoal);line-height:1.55}
 .contact-list,.util-list,.todo-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
 .contact-row,.util-row,.todo-row{background:var(--white);border:1px solid var(--cloud);border-radius:var(--radius);padding:12px 14px;box-shadow:var(--shadow);transition:box-shadow .15s ease}
 .contact-row:hover,.util-row:hover{box-shadow:var(--shadow-hover)}
@@ -261,6 +284,8 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
     <div class="summary">Under contract at $420,000 (new construction, Lennar). Closing targeted 9/25 at 2:00 PM.</div>
     <div class="stats-row"><div class="stat"><div class="v">Pending</div><div class="l">Status</div></div><div class="stat"><div class="v">$420,830</div><div class="l">Price</div></div><div class="stat"><div class="v">12</div><div class="l">Days on Market</div></div></div>
 
+    
+
     <h2>Timeline</h2>
     <div class="progress-wrap">
       <div class="progress-label"><span>5 of 7 steps complete</span><span>71%</span></div>
@@ -271,9 +296,11 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 
     
 
+    
+
     <h2>Key Contacts</h2><ul class="contact-list"><li class="contact-row"><div class="contact-top"><span class="contact-name">Scott White</span><span class="contact-role">Buyer&#x27;s Agent</span></div><div class="contact-company">@properties Christie&#x27;s International Real Estate</div><div class="contact-links"><a href="tel:317-345-0573">317-345-0573</a><a href="mailto:swhite@atpropertiesind.com">swhite@atpropertiesind.com</a><a href="https://www.boughtwithscott.com" target="_blank" rel="noopener">https://www.boughtwithscott.com</a></div></li><li class="contact-row"><div class="contact-top"><span class="contact-name">Jason Lee</span><span class="contact-role">Home Inspector</span></div><div class="contact-company">Door to Door Inspections</div><div class="contact-links"><a href="tel:317-500-0903">317-500-0903</a><a href="mailto:jason.lee@d2dinspections.com">jason.lee@d2dinspections.com</a><a href="https://www.d2dinspections.com" target="_blank" rel="noopener">https://www.d2dinspections.com</a></div></li><li class="contact-row"><div class="contact-top"><span class="contact-name">Patti Henry</span><span class="contact-role">Transaction Coordinator</span></div><div class="contact-company">@properties</div><div class="contact-links"><a href="tel:317-489-3441">317-489-3441</a><a href="mailto:patti@atpropertiesind.com">patti@atpropertiesind.com</a></div></li><li class="contact-row"><div class="contact-top"><span class="contact-name">Christine Hardy</span><span class="contact-role">Builder Concierge</span></div><div class="contact-company">Lennar</div><div class="contact-links"><a href="tel:317-775-5042">317-775-5042</a><a href="mailto:Christine.Hardy@Lennar.com">Christine.Hardy@Lennar.com</a></div></li><li class="contact-row"><div class="contact-top"><span class="contact-name">Lennar Title</span><span class="contact-role">Title/Escrow Officer</span></div></li><li class="contact-row"><div class="contact-top"><span class="contact-name">Lona Schroeder</span><span class="contact-role">Buyer&#x27;s Loan Officer</span></div><div class="contact-company">Lennar Mortgage</div><div class="contact-links"><a href="mailto:lonaschroeder@lennarmortgage.com">lonaschroeder@lennarmortgage.com</a></div></li></ul>
 
-    <h2>Documents</h2><div class="doclist"><a class="doc" href="https://account.docusign.com/" target="_blank" rel="noopener"><span class="meta"><span class="label">Purchase Contract (Signed)</span></span><span class="badge">Via DocuSign <span class="arrow">&rarr;</span></span></a><a class="doc" href="documents/bldr_option_summary.pdf" target="_blank" rel="noopener"><span class="meta"><span class="label">Builder Option Summary</span></span><span class="badge">Document <span class="arrow">&rarr;</span></span></a><a class="doc" href="documents/closing_dates.pdf" target="_blank" rel="noopener"><span class="meta"><span class="label">Closing Dates &amp; Times</span></span><span class="badge">Document <span class="arrow">&rarr;</span></span></a></div>
+    <h2>Documents</h2><div class="doclist"><a class="doc" href="https://account.docusign.com/" target="_blank" rel="noopener"><span class="meta"><span class="label">Purchase Contract (Signed)</span></span><span class="badge">Via DocuSign <span class="arrow">&rarr;</span></span></a><a class="doc" href="documents/bldr_option_summary.pdf" target="_blank" rel="noopener"><span class="meta"><span class="label">Builder Option Summary</span></span><span class="badge">Document <span class="arrow">&rarr;</span></span></a><a class="doc" href="documents/closing_dates.pdf" target="_blank" rel="noopener"><span class="meta"><span class="label">Closing Dates &amp; Times</span></span><span class="badge">Document <span class="arrow">&rarr;</span></span></a><a class="doc" href="documents/vendor_recommendations.pdf" target="_blank" rel="noopener"><span class="meta"><span class="label">Vendor Recommendations</span></span><span class="badge">Document <span class="arrow">&rarr;</span></span></a></div>
 
     <h2>Utilities</h2><p class="section-intro">Call each of these before closing to start service in your name. Check them off as you go &mdash; your progress is saved on this device.</p><ul class="util-list"><li class="util-row checkable" id="row-util-0" data-category="Gas"><input type="checkbox" id="util-0" ><label for="util-0"><div class="util-top"><span class="util-provider">CenterPoint Energy</span><span class="util-cat">Gas</span></div><div class="util-links"><a href="tel:800-227-1376">800-227-1376</a></div></label></li><li class="util-row checkable" id="row-util-1" data-category="Electric"><input type="checkbox" id="util-1" ><label for="util-1"><div class="util-top"><span class="util-provider">Duke Energy Indiana</span><span class="util-cat">Electric</span></div><div class="util-links"><a href="tel:800-521-2232">800-521-2232</a></div></label></li><li class="util-row checkable" id="row-util-2" data-category="Water"><input type="checkbox" id="util-2" ><label for="util-2"><div class="util-top"><span class="util-provider">Indiana American Water</span><span class="util-cat">Water</span></div><div class="util-links"><a href="tel:800-492-8373">800-492-8373</a></div></label></li><li class="util-row checkable" id="row-util-3" data-category="Sewer"><input type="checkbox" id="util-3" ><label for="util-3"><div class="util-top"><span class="util-provider">City of Franklin</span><span class="util-cat">Sewer</span></div><div class="util-links"><a href="tel:317-736-3640">317-736-3640</a></div></label></li><li class="util-row checkable" id="row-util-4" data-category="Internet"><input type="checkbox" id="util-4" ><label for="util-4"><div class="util-top"><span class="util-provider">Metronet</span><span class="util-cat">Internet</span></div><div class="util-notes">AT&amp;T and Xfinity/Comcast also available</div></label></li></ul>
 
@@ -286,7 +313,7 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 
     <div class="footnote">
       Scott White &middot; @properties Indy<br>
-      Last updated 2026-09-18. This page is private to you &mdash; please don't share the link.
+      Last updated 2026-09-19. This page is private to you &mdash; please don't share the link.
     </div>
   </div>
 <script>
