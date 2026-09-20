@@ -84,6 +84,10 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 .footnote{margin-top:36px;padding-top:16px;border-top:1px solid var(--cloud);font-size:11px;color:var(--mist);line-height:1.6}
 
 .section-intro{font-size:13px;color:var(--slate);margin:-8px 0 12px;line-height:1.5}
+.resource-grid{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}
+.resource-card{background:var(--white);border:1px solid var(--cloud);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow)}
+.resource-title{font-weight:700;font-size:14px;color:var(--ink);margin-bottom:5px}
+.resource-body{font-size:13px;color:var(--charcoal);line-height:1.55}
 .contact-list,.util-list,.todo-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
 .contact-row,.util-row,.todo-row{background:var(--white);border:1px solid var(--cloud);border-radius:var(--radius);padding:12px 14px;box-shadow:var(--shadow);transition:box-shadow .15s ease}
 .contact-row:hover,.util-row:hover{box-shadow:var(--shadow-hover)}
@@ -298,7 +302,7 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 
     <div class="staff-section">
       <h3>Key Contacts</h3>
-      <ul class="staff-list"><li>(none yet)</li></ul>
+      <ul class="staff-list"><li><span class="staff-item-label">Scott White (Buyer&#x27;s Agent)</span><span class="staff-item-meta">@properties Christie&#x27;s International Real Estate &amp;middot; 317-345-0573 &amp;middot; swhite@atpropertiesind.com</span></li><li><span class="staff-item-label">Indiana Members Credit Union (Buyer&#x27;s Loan Officer)</span><span class="staff-item-meta"></span></li></ul>
       <div class="staff-row">
         <label>Role<input type="text" id="ct-role" placeholder="e.g. Title/Escrow Officer"></label>
         <label>Name<input type="text" id="ct-name"></label>
