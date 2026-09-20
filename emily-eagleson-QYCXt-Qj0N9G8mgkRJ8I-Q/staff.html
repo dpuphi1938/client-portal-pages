@@ -62,9 +62,32 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 .cal-subscribe:hover{text-decoration:underline}
 .tgcal{font-size:11px;font-weight:600;color:var(--slate);text-decoration:none;white-space:nowrap;margin-left:8px}
 .tgcal:hover{color:var(--red-dark);text-decoration:underline}
+.home-value{background:var(--white);border:1px solid var(--cloud);border-radius:var(--radius);padding:18px 16px;box-shadow:var(--shadow);margin-bottom:20px}
+.hv-estimate{font-size:26px;font-weight:800;color:var(--ink)}
+.hv-sub{font-size:12px;color:var(--slate);margin-top:4px}
+.hv-gain{font-size:13.5px;font-weight:600;margin-top:10px}
+.hv-gain.positive{color:var(--good)}
+.hv-note{font-size:11.5px;color:var(--slate);margin-top:8px;font-style:italic}
+.comps-block{background:var(--white);border:1px solid var(--cloud);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);margin-top:-8px;margin-bottom:20px}
+.comps-chart{margin-bottom:6px}
+.comps-table{width:100%;border-collapse:collapse;font-size:12px;margin-top:10px}
+.comps-table th{text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.03em;color:var(--slate);font-weight:600;padding:6px 8px;border-bottom:1px solid var(--cloud)}
+.comps-table td{padding:7px 8px;border-bottom:1px solid var(--cloud);color:var(--charcoal);white-space:nowrap}
+.comps-table tr:last-child td{border-bottom:0}
+.me-row{display:flex;justify-content:space-between;align-items:baseline;font-size:13.5px}
+.me-row .me-label{color:var(--charcoal);font-weight:600}
+.me-row .me-val{font-weight:800;font-size:16px;color:var(--ink)}
+.me-row.highlight .me-val{color:var(--good)}
+.me-foot{font-size:11px;color:var(--slate);margin-top:10px;line-height:1.5}
+.hv-history{list-style:none;margin:14px 0 0;padding:12px 0 0;border-top:1px solid var(--cloud);display:flex;flex-direction:column;gap:6px}
+.hv-history li{font-size:12px;color:var(--slate);display:flex;justify-content:space-between}
 .footnote{margin-top:36px;padding-top:16px;border-top:1px solid var(--cloud);font-size:11px;color:var(--mist);line-height:1.6}
 
 .section-intro{font-size:13px;color:var(--slate);margin:-8px 0 12px;line-height:1.5}
+.resource-grid{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}
+.resource-card{background:var(--white);border:1px solid var(--cloud);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow)}
+.resource-title{font-weight:700;font-size:14px;color:var(--ink);margin-bottom:5px}
+.resource-body{font-size:13px;color:var(--charcoal);line-height:1.55}
 .contact-list,.util-list,.todo-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
 .contact-row,.util-row,.todo-row{background:var(--white);border:1px solid var(--cloud);border-radius:var(--radius);padding:12px 14px;box-shadow:var(--shadow);transition:box-shadow .15s ease}
 .contact-row:hover,.util-row:hover{box-shadow:var(--shadow-hover)}
@@ -307,7 +330,7 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 
     <div class="staff-section">
       <h3>Documents</h3>
-      <ul class="staff-list"><li><span class="staff-item-label">Listing Agreement (Signed)</span><span class="staff-item-meta">link</span></li><li><span class="staff-item-label">Mutual Release From Purchase Agreement (Signed)</span><span class="staff-item-meta">link &middot; Signed by both parties 08/21/2026</span></li></ul>
+      <ul class="staff-list"><li><span class="staff-item-label">Listing Agreement (Signed)</span><span class="staff-item-meta">link</span></li><li><span class="staff-item-label">Mutual Release From Purchase Agreement (Signed)</span><span class="staff-item-meta">link &middot; Signed by both parties 08/21/2026</span></li><li><span class="staff-item-label">Vendor Recommendations</span><span class="staff-item-meta">file</span></li></ul>
       <div class="staff-row">
         <label>Label<input type="text" id="dl-label" placeholder="e.g. Purchase Agreement (Signed)"></label>
         <label>DocuSign / External URL<input type="text" id="dl-url"></label>
