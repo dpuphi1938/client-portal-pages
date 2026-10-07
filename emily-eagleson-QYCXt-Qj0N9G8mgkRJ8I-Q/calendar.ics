@@ -7,10 +7,32 @@ X-WR-CALNAME:9348 Stones Ferry Way Transaction Timeline
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:emily-eagleson-QYCXt-Qj0N9G8mgkRJ8I-Q-listed@portal.boughtwithscott.com
-DTSTAMP:20260928T145937Z
+DTSTAMP:20261007T041940Z
 DTSTART;VALUE=DATE:20260501
 DTEND;VALUE=DATE:20260502
 SUMMARY:Listed — 9348 Stones Ferry Way
+DESCRIPTION:Done — https://dpuphi1938.github.io/client-portal-pages/emily-
+ eagleson-QYCXt-Qj0N9G8mgkRJ8I-Q/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:emily-eagleson-QYCXt-Qj0N9G8mgkRJ8I-Q-under-contract@portal.boughtwith
+ scott.com
+DTSTAMP:20261007T041940Z
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261004
+SUMMARY:Under Contract — 9348 Stones Ferry Way
+DESCRIPTION:Done — https://dpuphi1938.github.io/client-portal-pages/emily-
+ eagleson-QYCXt-Qj0N9G8mgkRJ8I-Q/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:emily-eagleson-QYCXt-Qj0N9G8mgkRJ8I-Q-closing@portal.boughtwithscott.c
+ om
+DTSTAMP:20261007T041940Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Closing — 9348 Stones Ferry Way
 DESCRIPTION:Done — https://dpuphi1938.github.io/client-portal-pages/emily-
  eagleson-QYCXt-Qj0N9G8mgkRJ8I-Q/
 STATUS:CONFIRMED
