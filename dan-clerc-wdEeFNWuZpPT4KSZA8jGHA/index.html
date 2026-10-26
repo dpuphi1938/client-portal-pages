@@ -169,6 +169,50 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 .progress-label{font-size:12px;color:var(--slate);margin-bottom:6px;display:flex;justify-content:space-between;font-weight:600}
 .progress-track{height:8px;background:var(--cloud);border-radius:4px;overflow:hidden}
 .progress-fill{height:100%;background:linear-gradient(90deg,var(--red),var(--red-dark));border-radius:4px;transition:width .3s ease}
+
+.team-grid{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}
+.team-card{background:var(--white);border:1px solid var(--cloud);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:center}
+.team-photo{flex:0 0 60px;width:60px;height:60px;border-radius:50%;object-fit:cover;background:var(--cloud)}
+.team-info{flex:1;min-width:0}
+.team-name{font-weight:700;font-size:14.5px}
+.team-role{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--red-deep);background:var(--red-tint);border-radius:5px;padding:2px 7px;display:inline-block;margin-top:2px}
+.team-company{font-size:12.5px;color:var(--slate);margin-top:4px}
+.team-links{margin-top:6px;font-size:13px;display:flex;flex-wrap:wrap;gap:2px 12px}
+.team-links a{color:var(--red-dark);text-decoration:none;font-weight:600}
+.team-nmls{font-size:10.5px;color:var(--mist);margin-top:4px}
+
+.calc-card{background:var(--white);border:1px solid var(--cloud);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);margin-bottom:20px}
+.calc-row{display:flex;flex-direction:column;gap:4px;margin-bottom:12px}
+.calc-row label{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--slate)}
+.calc-row input,.calc-row select{font-family:inherit;font-size:15px;font-weight:600;color:var(--ink);border:1px solid var(--cloud);border-radius:8px;padding:9px 10px;background:var(--paper)}
+.calc-row input:focus,.calc-row select:focus{outline:2px solid var(--red);outline-offset:1px}
+.calc-result{background:var(--paper);border-radius:10px;padding:14px 16px;margin-top:4px}
+.calc-result-main{font-size:24px;font-weight:800;color:var(--ink)}
+.calc-result-sub{font-size:12px;color:var(--slate);margin-top:3px}
+.calc-result-row{display:flex;justify-content:space-between;font-size:13px;margin-top:8px;padding-top:8px;border-top:1px solid var(--cloud)}
+.calc-result-row .cr-label{color:var(--charcoal)}
+.calc-result-row .cr-val{font-weight:700}
+.calc-result-row .cr-val.good{color:var(--good)}
+.calc-result-row .cr-val.bad{color:var(--bad)}
+.calc-disclaimer{font-size:10.5px;color:var(--mist);margin-top:10px;line-height:1.5}
+.calc-cta{display:inline-flex;align-items:center;gap:5px;margin-top:10px;font-size:12.5px;font-weight:700;color:var(--red-dark);text-decoration:none}
+.calc-cta:hover{text-decoration:underline}
+
+.area-trend-block{background:var(--white);border:1px solid var(--cloud);border-radius:var(--radius);padding:14px 14px 6px;box-shadow:var(--shadow);margin-bottom:14px}
+.area-trend-tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.area-trend-tab{font-family:inherit;font-size:11.5px;font-weight:700;color:var(--slate);background:var(--paper);border:1px solid var(--cloud);border-radius:999px;padding:6px 12px;cursor:pointer;transition:background .15s ease,color .15s ease,border-color .15s ease}
+.area-trend-tab:hover{border-color:var(--mist)}
+.area-trend-tab.active{background:var(--red);border-color:var(--red);color:var(--white)}
+.area-trend-label{font-size:10.5px;color:var(--slate);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px}
+.area-stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
+.area-stat{background:var(--white);border:1px solid var(--cloud);border-radius:var(--radius);padding:12px 14px;box-shadow:var(--shadow)}
+.as-label{font-size:10.5px;color:var(--slate);text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px}
+.as-value{font-size:19px;font-weight:800;color:var(--ink)}
+.as-delta{font-size:11.5px;font-weight:700;margin-top:3px}
+.as-delta.good{color:var(--good)}
+.as-delta.bad{color:var(--bad)}
+.as-delta.flat{color:var(--slate)}
+.area-stats-secondary{display:flex;justify-content:space-between;font-size:12.5px;color:var(--charcoal);margin-bottom:20px}
 </style>
 </head>
 <body>
@@ -257,7 +301,7 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 </div>
     <div class="eyebrow">Client Portal</div>
     <h1>Dan Clerc</h1>
-    <div class="photo-wrap"><img class="hero" src="photo/liberty_creek.jpg" alt="5668 Liberty Creek Dr W, Indianapolis, IN listing photo"><div class="ribbon">Pending</div></div>
+    <div class="photo-wrap"><img class="hero" src="photo/liberty_creek.jpg" alt="5668 Liberty Creek Dr W, Indianapolis, IN listing photo"><div class="ribbon">Sold</div></div>
     <div class="sub">5668 Liberty Creek Dr W, Indianapolis, IN</div>
 
     <div class="countdown" id="closing-countdown" data-closing="2026-10-22">
@@ -286,7 +330,9 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
     </script>
 
     <div class="summary">Under contract at $270,000 (reduced from $275,000 per Amendment #1 after the appraisal), plus a $3,500 seller credit toward closing costs. Seller completing roof and mold remediation before closing. Closing targeted 10/22.</div>
-    <div class="stats-row"><div class="stat"><div class="v">Pending</div><div class="l">Status</div></div><div class="stat"><div class="v">$275,000</div><div class="l">Price</div></div><div class="stat"><div class="v">26</div><div class="l">Days on Market</div></div></div>
+    <div class="stats-row"><div class="stat"><div class="v">Sold</div><div class="l">Status</div></div><div class="stat"><div class="v">$270,000</div><div class="l">Price</div></div><div class="stat"><div class="v">26</div><div class="l">Days on Market</div></div></div>
+
+    
 
     
 
@@ -302,9 +348,13 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 
     
 
+    
+
+    
+
     <h2>Key Contacts</h2><ul class="contact-list"><li class="contact-row"><div class="contact-top"><span class="contact-name">Scott White</span><span class="contact-role">Buyer&#x27;s Agent</span></div><div class="contact-company">@properties Christie&#x27;s International Real Estate</div><div class="contact-links"><a href="tel:317-345-0573">317-345-0573</a><a href="mailto:swhite@atpropertiesind.com">swhite@atpropertiesind.com</a><a href="https://www.boughtwithscott.com" target="_blank" rel="noopener">https://www.boughtwithscott.com</a></div></li><li class="contact-row"><div class="contact-top"><span class="contact-name">Jason Lee</span><span class="contact-role">Home Inspector</span></div><div class="contact-company">Door to Door Inspections</div><div class="contact-links"><a href="tel:317-500-0903">317-500-0903</a><a href="mailto:jason.lee@d2dinspections.com">jason.lee@d2dinspections.com</a><a href="https://www.d2dinspections.com" target="_blank" rel="noopener">https://www.d2dinspections.com</a></div></li><li class="contact-row"><div class="contact-top"><span class="contact-name">Patti Henry</span><span class="contact-role">Transaction Coordinator</span></div><div class="contact-company">@properties</div><div class="contact-links"><a href="tel:317-489-3441">317-489-3441</a><a href="mailto:patti@atpropertiesind.com">patti@atpropertiesind.com</a></div></li><li class="contact-row"><div class="contact-top"><span class="contact-name">Patrice Allen</span><span class="contact-role">Seller&#x27;s Agent</span></div><div class="contact-company">PMA Realty</div><div class="contact-links"><a href="mailto:patrice@pmarealty.homes">patrice@pmarealty.homes</a></div></li><li class="contact-row"><div class="contact-top"><span class="contact-name">Elizabeth Rogers</span><span class="contact-role">Title/Escrow Officer</span></div><div class="contact-company">Chicago Title</div><div class="contact-links"><a href="tel:317-271-7750">317-271-7750</a><a href="mailto:Elizabeth.Rogers@ctt.com">Elizabeth.Rogers@ctt.com</a></div></li><li class="contact-row"><div class="contact-top"><span class="contact-name">Kole McClain</span><span class="contact-role">Buyer&#x27;s Loan Officer</span></div><div class="contact-company">Union Home Mortgage</div><div class="contact-links"><a href="mailto:kmcclain@uhm.com">kmcclain@uhm.com</a></div></li></ul>
 
-    <h2>Documents</h2><div class="doclist"><a class="doc" href="https://account.docusign.com/" target="_blank" rel="noopener"><span class="meta"><span class="label">Purchase Agreement &amp; Counters (Signed)</span><span class="status-pill good">&#10003; Signed by both parties 09/09/2026</span></span><span class="badge">Via DocuSign <span class="arrow">&rarr;</span></span></a><a class="doc" href="https://account.docusign.com/" target="_blank" rel="noopener"><span class="meta"><span class="label">Seller&#x27;s Disclosure (Signed)</span></span><span class="badge">Via DocuSign <span class="arrow">&rarr;</span></span></a><a class="doc" href="documents/appraisal.pdf" target="_blank" rel="noopener"><span class="meta"><span class="label">Appraisal Report</span></span><span class="badge">Document <span class="arrow">&rarr;</span></span></a><a class="doc" href="documents/bir1.pdf" target="_blank" rel="noopener"><span class="meta"><span class="label">Buyer&#x27;s Inspection Response</span></span><span class="badge">Document <span class="arrow">&rarr;</span></span></a><a class="doc" href="documents/utilities.pdf" target="_blank" rel="noopener"><span class="meta"><span class="label">Utilities &amp; HOA Info</span></span><span class="badge">Document <span class="arrow">&rarr;</span></span></a><a class="doc" href="documents/hoa_bylaws.pdf" target="_blank" rel="noopener"><span class="meta"><span class="label">HOA Bylaws</span></span><span class="badge">Document <span class="arrow">&rarr;</span></span></a><a class="doc" href="documents/hoa_ccr.pdf" target="_blank" rel="noopener"><span class="meta"><span class="label">HOA Covenants &amp; Restrictions</span></span><span class="badge">Document <span class="arrow">&rarr;</span></span></a><a class="doc" href="documents/vendor_recommendations.pdf" target="_blank" rel="noopener"><span class="meta"><span class="label">Vendor Recommendations</span></span><span class="badge">Document <span class="arrow">&rarr;</span></span></a><a class="doc" href="https://account.docusign.com/" target="_blank" rel="noopener"><span class="meta"><span class="label">Seller&#x27;s Inspection Response (Signed)</span></span><span class="badge">Via DocuSign <span class="arrow">&rarr;</span></span></a><a class="doc" href="https://account.docusign.com/" target="_blank" rel="noopener"><span class="meta"><span class="label">Amendment #1 to Purchase Agreement (Signed)</span></span><span class="badge">Via DocuSign <span class="arrow">&rarr;</span></span></a><a class="doc" href="documents/clerc_em_receipt.pdf" target="_blank" rel="noopener"><span class="meta"><span class="label">Earnest Money Receipt</span></span><span class="badge">Document <span class="arrow">&rarr;</span></span></a></div>
+    <h2>Documents</h2><div class="doclist"><a class="doc" href="https://account.docusign.com/" target="_blank" rel="noopener"><span class="meta"><span class="label">Purchase Agreement &amp; Counters (Signed)</span><span class="status-pill good">&#10003; Signed by both parties 09/09/2026</span></span><span class="badge">Via DocuSign <span class="arrow">&rarr;</span></span></a><a class="doc" href="https://account.docusign.com/" target="_blank" rel="noopener"><span class="meta"><span class="label">Seller&#x27;s Disclosure (Signed)</span></span><span class="badge">Via DocuSign <span class="arrow">&rarr;</span></span></a><a class="doc" href="documents/appraisal.pdf" target="_blank" rel="noopener"><span class="meta"><span class="label">Appraisal Report</span></span><span class="badge">Document <span class="arrow">&rarr;</span></span></a><a class="doc" href="documents/bir1.pdf" target="_blank" rel="noopener"><span class="meta"><span class="label">Buyer&#x27;s Inspection Response</span></span><span class="badge">Document <span class="arrow">&rarr;</span></span></a><a class="doc" href="documents/utilities.pdf" target="_blank" rel="noopener"><span class="meta"><span class="label">Utilities &amp; HOA Info</span></span><span class="badge">Document <span class="arrow">&rarr;</span></span></a><a class="doc" href="documents/hoa_bylaws.pdf" target="_blank" rel="noopener"><span class="meta"><span class="label">HOA Bylaws</span></span><span class="badge">Document <span class="arrow">&rarr;</span></span></a><a class="doc" href="https://drive.google.com/file/d/1rRDv7ftS_sU4sdB0mfVypVuKe6_wo32w/view?usp=drivesdk" target="_blank" rel="noopener"><span class="meta"><span class="label">HOA Covenants &amp; Restrictions</span></span><span class="badge">External Link <span class="arrow">&rarr;</span></span></a><a class="doc" href="documents/vendor_recommendations.pdf" target="_blank" rel="noopener"><span class="meta"><span class="label">Vendor Recommendations</span></span><span class="badge">Document <span class="arrow">&rarr;</span></span></a><a class="doc" href="https://account.docusign.com/" target="_blank" rel="noopener"><span class="meta"><span class="label">Seller&#x27;s Inspection Response (Signed)</span></span><span class="badge">Via DocuSign <span class="arrow">&rarr;</span></span></a><a class="doc" href="https://account.docusign.com/" target="_blank" rel="noopener"><span class="meta"><span class="label">Amendment #1 to Purchase Agreement (Signed)</span></span><span class="badge">Via DocuSign <span class="arrow">&rarr;</span></span></a><a class="doc" href="documents/clerc_em_receipt.pdf" target="_blank" rel="noopener"><span class="meta"><span class="label">Earnest Money Receipt</span></span><span class="badge">Document <span class="arrow">&rarr;</span></span></a></div>
 
     <h2>Utilities</h2><p class="section-intro">Call each of these before closing to start service in your name. Check them off as you go &mdash; your progress is saved on this device.</p><ul class="util-list"><li class="util-row checkable" id="row-util-0" data-category="Gas"><input type="checkbox" id="util-0" ><label for="util-0"><div class="util-top"><span class="util-provider">Citizens Energy Group</span><span class="util-cat">Gas</span></div><div class="util-links"><a href="tel:317-924-3311">317-924-3311</a></div></label></li><li class="util-row checkable" id="row-util-1" data-category="Electric"><input type="checkbox" id="util-1" ><label for="util-1"><div class="util-top"><span class="util-provider">AES Indiana</span><span class="util-cat">Electric</span></div><div class="util-links"><a href="tel:888-261-8222">888-261-8222</a></div></label></li><li class="util-row checkable" id="row-util-2" data-category="Water"><input type="checkbox" id="util-2" ><label for="util-2"><div class="util-top"><span class="util-provider">Citizens Energy Group</span><span class="util-cat">Water</span></div><div class="util-links"><a href="tel:317-924-3311">317-924-3311</a></div></label></li><li class="util-row checkable" id="row-util-3" data-category="Sewer"><input type="checkbox" id="util-3" ><label for="util-3"><div class="util-top"><span class="util-provider">Citizens Energy Group</span><span class="util-cat">Sewer</span></div><div class="util-links"><a href="tel:317-924-3311">317-924-3311</a></div><div class="util-notes">Same utility as water in this service area</div></label></li><li class="util-row checkable" id="row-util-4" data-category="Internet"><input type="checkbox" id="util-4" ><label for="util-4"><div class="util-top"><span class="util-provider">AT&amp;T</span><span class="util-cat">Internet</span></div><div class="util-links"><a href="tel:800-288-2020">800-288-2020</a></div><div class="util-notes">Xfinity/Comcast and Metronet also available in the area</div></label></li></ul>
 
@@ -317,7 +367,7 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 
     <div class="footnote">
       Scott White &middot; @properties Indy<br>
-      Last updated 2026-10-08. This page is private to you &mdash; please don't share the link.
+      Last updated 2026-10-25. This page is private to you &mdash; please don't share the link.
     </div>
   </div>
 <script>
