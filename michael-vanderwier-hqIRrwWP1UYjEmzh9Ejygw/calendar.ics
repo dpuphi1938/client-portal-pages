@@ -8,10 +8,21 @@ X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:michael-vanderwier-hqIRrwWP1UYjEmzh9Ejygw-listed@portal.boughtwithscot
  t.com
-DTSTAMP:20261007T041943Z
+DTSTAMP:20261029T012520Z
 DTSTART;VALUE=DATE:20260904
 DTEND;VALUE=DATE:20260905
 SUMMARY:Listed — 10764 Pimlico Cir
+DESCRIPTION:Done — https://dpuphi1938.github.io/client-portal-pages/michae
+ l-vanderwier-hqIRrwWP1UYjEmzh9Ejygw/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:michael-vanderwier-hqIRrwWP1UYjEmzh9Ejygw-price-reduced-to-350-000@por
+ tal.boughtwithscott.com
+DTSTAMP:20261029T012520Z
+DTSTART;VALUE=DATE:20260923
+DTEND;VALUE=DATE:20260924
+SUMMARY:Price Reduced to $350\,000 — 10764 Pimlico Cir
 DESCRIPTION:Done — https://dpuphi1938.github.io/client-portal-pages/michae
  l-vanderwier-hqIRrwWP1UYjEmzh9Ejygw/
 STATUS:CONFIRMED
