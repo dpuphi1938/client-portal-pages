@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Scott White Transaction Portal//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:6115 Green Glade Dr\, Whitestown\, IN 46075 Transaction Timel
+ ine
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:dee-labeur-D6AVED8L1f8YXaj44fykTQ-under-contract@portal.boughtwithscot
+ t.com
+DTSTAMP:20261029T003658Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Under Contract — 6115 Green Glade Dr\, Whitestown\, IN 46075
+DESCRIPTION:Done — https://dpuphi1938.github.io/client-portal-pages/dee-la
+ beur-D6AVED8L1f8YXaj44fykTQ/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:dee-labeur-D6AVED8L1f8YXaj44fykTQ-closing@portal.boughtwithscott.com
+DTSTAMP:20261029T003658Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Closing — 6115 Green Glade Dr\, Whitestown\, IN 46075
+DESCRIPTION:Upcoming — https://dpuphi1938.github.io/client-portal-pages/de
+ e-labeur-D6AVED8L1f8YXaj44fykTQ/
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
