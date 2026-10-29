@@ -312,23 +312,23 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 
     <div class="staff-section">
       <h3>Status Summary</h3>
-      <div class="staff-current">Under contract at $780,000 as of 10/22/2026. Closing targeted November 13, 2026.</div>
-      <textarea id="status-summary-input">Under contract at $780,000 as of 10/22/2026. Closing targeted November 13, 2026.</textarea>
+      <div class="staff-current">Under contract at $780,000 as of 10/22/2026, with a $5,000 seller credit. Earnest money $5,000 held by Foundation Title. Buyer inspection response due 11/06/2026. Closing targeted 9:00 AM, November 13, 2026 at the Brownsburg title office.</div>
+      <textarea id="status-summary-input">Under contract at $780,000 as of 10/22/2026, with a $5,000 seller credit. Earnest money $5,000 held by Foundation Title. Buyer inspection response due 11/06/2026. Closing targeted 9:00 AM, November 13, 2026 at the Brownsburg title office.</textarea>
       <button class="staff-btn" id="status-summary-btn" onclick="submitStaff('status_summary_set', {text: document.getElementById('status-summary-input').value}, document.getElementById('status-summary-msg'), document.getElementById('status-summary-btn'))">Save</button>
       <div class="add-form-msg" id="status-summary-msg" hidden></div>
     </div>
 
     <div class="staff-section">
       <h3>Note From Agent</h3>
-      <div class="staff-current">(none set)</div>
-      <textarea id="note-input"></textarea>
+      <div class="staff-current">Key dates and contacts for 5378 Rose Drive are above. Survey was waived and no home warranty is included per the purchase agreement. The seller will be signing remotely, so Foundation Title has been notified to prepare for that.</div>
+      <textarea id="note-input">Key dates and contacts for 5378 Rose Drive are above. Survey was waived and no home warranty is included per the purchase agreement. The seller will be signing remotely, so Foundation Title has been notified to prepare for that.</textarea>
       <button class="staff-btn" id="note-btn" onclick="submitStaff('note_set', {text: document.getElementById('note-input').value}, document.getElementById('note-msg'), document.getElementById('note-btn'))">Save</button>
       <div class="add-form-msg" id="note-msg" hidden></div>
     </div>
 
     <div class="staff-section">
       <h3>Milestones</h3>
-      <ul class="staff-list"><li><input type="checkbox" class="staff-milestone-toggle" id="ms-0" checked data-label="Under Contract" data-date="10/22/2026"><span class="staff-item-label">Under Contract</span><span class="staff-item-meta">10/22/2026</span></li><li><input type="checkbox" class="staff-milestone-toggle" id="ms-1"  data-label="Loan Approval Deadline" data-date="11/12/2026"><span class="staff-item-label">Loan Approval Deadline</span><span class="staff-item-meta">11/12/2026</span></li><li><input type="checkbox" class="staff-milestone-toggle" id="ms-2"  data-label="Closing" data-date="11/13/2026"><span class="staff-item-label">Closing</span><span class="staff-item-meta">11/13/2026</span></li></ul>
+      <ul class="staff-list"><li><input type="checkbox" class="staff-milestone-toggle" id="ms-0" checked data-label="Under Contract" data-date="10/22/2026"><span class="staff-item-label">Under Contract</span><span class="staff-item-meta">10/22/2026</span></li><li><input type="checkbox" class="staff-milestone-toggle" id="ms-1" checked data-label="Financing Application Due" data-date="10/25/2026"><span class="staff-item-label">Financing Application Due</span><span class="staff-item-meta">10/25/2026</span></li><li><input type="checkbox" class="staff-milestone-toggle" id="ms-2"  data-label="Buyer Inspection Response Due" data-date="11/06/2026"><span class="staff-item-label">Buyer Inspection Response Due</span><span class="staff-item-meta">11/06/2026</span></li><li><input type="checkbox" class="staff-milestone-toggle" id="ms-3"  data-label="Loan Approval Deadline" data-date="11/12/2026"><span class="staff-item-label">Loan Approval Deadline</span><span class="staff-item-meta">11/12/2026</span></li><li><input type="checkbox" class="staff-milestone-toggle" id="ms-4"  data-label="Closing" data-date="11/13/2026"><span class="staff-item-label">Closing</span><span class="staff-item-meta">11/13/2026</span></li></ul>
       <div class="staff-row">
         <label>Label<input type="text" id="ms-new-label" placeholder="e.g. Inspection Response Due"></label>
         <label>Date<input type="text" id="ms-new-date" placeholder="MM/DD/YYYY"></label>
@@ -350,7 +350,7 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 
     <div class="staff-section">
       <h3>Key Contacts</h3>
-      <ul class="staff-list"><li><span class="staff-item-label">Jason Lee (Home Inspector)</span><span class="staff-item-meta">Door to Door Inspections &amp;middot; 317-500-0903 &amp;middot; jason.lee@d2dinspections.com</span></li><li><span class="staff-item-label">Kole McClain (Lender)</span><span class="staff-item-meta">Union Home Mortgage &amp;middot; 317.502.3667 &amp;middot; kmcclain@uhm.com</span></li><li><span class="staff-item-label">Shibu Samuel (Listing Agent)</span><span class="staff-item-meta">Forthright Real Estate &amp;middot; shibu.sam7@gmail.com</span></li></ul>
+      <ul class="staff-list"><li><span class="staff-item-label">Jason Lee (Home Inspector)</span><span class="staff-item-meta">Door to Door Inspections &amp;middot; 317-500-0903 &amp;middot; jason.lee@d2dinspections.com</span></li><li><span class="staff-item-label">Kole McClain (Lender)</span><span class="staff-item-meta">Union Home Mortgage &amp;middot; 317.502.3667 &amp;middot; kmcclain@uhm.com</span></li><li><span class="staff-item-label">Shibu Samuel (Listing Agent)</span><span class="staff-item-meta">Forthright Real Estate &amp;middot; shibu.sam7@gmail.com</span></li><li><span class="staff-item-label">Hannah Brumbarger (Title/Escrow Officer)</span><span class="staff-item-meta">Foundation Title &amp;middot; 317-709-5414 &amp;middot; hannah@ft317.com</span></li></ul>
       <div class="staff-row">
         <label>Role<input type="text" id="ct-role" placeholder="e.g. Title/Escrow Officer"></label>
         <label>Name<input type="text" id="ct-name"></label>
@@ -364,7 +364,7 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 
     <div class="staff-section">
       <h3>Utilities</h3>
-      <ul class="staff-list"><li>(none yet)</li></ul>
+      <ul class="staff-list"><li><span class="staff-item-label">Boone County REMC (Electric)</span><span class="staff-item-meta">800-897-7362</span></li><li><span class="staff-item-label">CenterPoint Energy (Gas)</span><span class="staff-item-meta">800-227-1376</span></li><li><span class="staff-item-label">Zionsville Water/Indiana American Water (Water)</span><span class="staff-item-meta"></span></li><li><span class="staff-item-label">Verify -- may be private septic (Sewer)</span><span class="staff-item-meta"></span></li></ul>
       <div class="staff-row">
         <label>Category<input type="text" id="ut-category" placeholder="e.g. Electric"></label>
         <label>Provider<input type="text" id="ut-provider"></label>
