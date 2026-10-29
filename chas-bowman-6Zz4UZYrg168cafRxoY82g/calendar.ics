@@ -7,10 +7,21 @@ X-WR-CALNAME:7877 Blue Jay Way Transaction Timeline
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:chas-bowman-6Zz4UZYrg168cafRxoY82g-listed@portal.boughtwithscott.com
-DTSTAMP:20261029T010037Z
+DTSTAMP:20261029T012447Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:Listed — 7877 Blue Jay Way
+DESCRIPTION:Done — https://dpuphi1938.github.io/client-portal-pages/chas-b
+ owman-6Zz4UZYrg168cafRxoY82g/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:chas-bowman-6Zz4UZYrg168cafRxoY82g-listing-agreement-signed@portal.bou
+ ghtwithscott.com
+DTSTAMP:20261029T012447Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:Listing Agreement Signed — 7877 Blue Jay Way
 DESCRIPTION:Done — https://dpuphi1938.github.io/client-portal-pages/chas-b
  owman-6Zz4UZYrg168cafRxoY82g/
 STATUS:CONFIRMED

@@ -312,23 +312,23 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 
     <div class="staff-section">
       <h3>Status Summary</h3>
-      <div class="staff-current">Coming Soon in MIBOR at $515,000, 6-month listing. Goes fully Active 10/29/2026.</div>
-      <textarea id="status-summary-input">Coming Soon in MIBOR at $515,000, 6-month listing. Goes fully Active 10/29/2026.</textarea>
+      <div class="staff-current">Active listing at $515,000 (Eagles Nest subdivision, Boone County). Listing agreement signed 10/27/2026, went live 10/29/2026 as a 6-month listing (expires 04/29/2027).</div>
+      <textarea id="status-summary-input">Active listing at $515,000 (Eagles Nest subdivision, Boone County). Listing agreement signed 10/27/2026, went live 10/29/2026 as a 6-month listing (expires 04/29/2027).</textarea>
       <button class="staff-btn" id="status-summary-btn" onclick="submitStaff('status_summary_set', {text: document.getElementById('status-summary-input').value}, document.getElementById('status-summary-msg'), document.getElementById('status-summary-btn'))">Save</button>
       <div class="add-form-msg" id="status-summary-msg" hidden></div>
     </div>
 
     <div class="staff-section">
       <h3>Note From Agent</h3>
-      <div class="staff-current">6-month listing, $515,000. Coming Soon status in MIBOR as of 10/28; goes fully Active 10/29.</div>
-      <textarea id="note-input">6-month listing, $515,000. Coming Soon status in MIBOR as of 10/28; goes fully Active 10/29.</textarea>
+      <div class="staff-current">Key details for 7877 Blue Jay Way are above. This is a 6-month exclusive right-to-sell listing. Seller&#x27;s Disclosure is on file. HOA is Eagles Nest Homeowners Association -- covenants are in the shared Drive folder, but no management company contact has been confirmed yet.</div>
+      <textarea id="note-input">Key details for 7877 Blue Jay Way are above. This is a 6-month exclusive right-to-sell listing. Seller&#x27;s Disclosure is on file. HOA is Eagles Nest Homeowners Association -- covenants are in the shared Drive folder, but no management company contact has been confirmed yet.</textarea>
       <button class="staff-btn" id="note-btn" onclick="submitStaff('note_set', {text: document.getElementById('note-input').value}, document.getElementById('note-msg'), document.getElementById('note-btn'))">Save</button>
       <div class="add-form-msg" id="note-msg" hidden></div>
     </div>
 
     <div class="staff-section">
       <h3>Milestones</h3>
-      <ul class="staff-list"><li><input type="checkbox" class="staff-milestone-toggle" id="ms-0" checked data-label="Listed" data-date="10/29/2026"><span class="staff-item-label">Listed</span><span class="staff-item-meta">10/29/2026</span></li></ul>
+      <ul class="staff-list"><li><input type="checkbox" class="staff-milestone-toggle" id="ms-0" checked data-label="Listing Agreement Signed" data-date="10/27/2026"><span class="staff-item-label">Listing Agreement Signed</span><span class="staff-item-meta">10/27/2026</span></li><li><input type="checkbox" class="staff-milestone-toggle" id="ms-1" checked data-label="Listed" data-date="10/29/2026"><span class="staff-item-label">Listed</span><span class="staff-item-meta">10/29/2026</span></li></ul>
       <div class="staff-row">
         <label>Label<input type="text" id="ms-new-label" placeholder="e.g. Inspection Response Due"></label>
         <label>Date<input type="text" id="ms-new-date" placeholder="MM/DD/YYYY"></label>
@@ -364,7 +364,7 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 
     <div class="staff-section">
       <h3>Utilities</h3>
-      <ul class="staff-list"><li>(none yet)</li></ul>
+      <ul class="staff-list"><li><span class="staff-item-label">Boone County REMC (Electric)</span><span class="staff-item-meta">800-897-7362</span></li><li><span class="staff-item-label">CenterPoint Energy (Gas)</span><span class="staff-item-meta">800-227-1376</span></li><li><span class="staff-item-label">Indiana American Water / Zionsville (Water)</span><span class="staff-item-meta"></span></li><li><span class="staff-item-label">Eagles Nest Homeowners Association (HOA)</span><span class="staff-item-meta"></span></li></ul>
       <div class="staff-row">
         <label>Category<input type="text" id="ut-category" placeholder="e.g. Electric"></label>
         <label>Provider<input type="text" id="ut-provider"></label>
