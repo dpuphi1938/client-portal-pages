@@ -9,7 +9,7 @@ X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:dee-labeur-D6AVED8L1f8YXaj44fykTQ-under-contract@portal.boughtwithscot
  t.com
-DTSTAMP:20261029T171407Z
+DTSTAMP:20261030T003246Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:Under Contract — 6115 Green Glade Dr\, Whitestown\, IN 46075
@@ -19,7 +19,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:dee-labeur-D6AVED8L1f8YXaj44fykTQ-closing@portal.boughtwithscott.com
-DTSTAMP:20261029T171407Z
+DTSTAMP:20261030T003246Z
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261201
 SUMMARY:Closing — 6115 Green Glade Dr\, Whitestown\, IN 46075
@@ -30,7 +30,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:dee-labeur-D6AVED8L1f8YXaj44fykTQ-counter-offer-accepted@portal.bought
  withscott.com
-DTSTAMP:20261029T171407Z
+DTSTAMP:20261030T003246Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Counter Offer Accepted — 6115 Green Glade Dr\, Whitestown\, IN 460
@@ -42,7 +42,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:dee-labeur-D6AVED8L1f8YXaj44fykTQ-final-counter-counter-3-signed@porta
  l.boughtwithscott.com
-DTSTAMP:20261029T171407Z
+DTSTAMP:20261030T003246Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261025
 SUMMARY:Final Counter (Counter 3) Signed — 6115 Green Glade Dr\, Whitestow
@@ -54,7 +54,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:dee-labeur-D6AVED8L1f8YXaj44fykTQ-seller-s-disclosure-received@portal.
  boughtwithscott.com
-DTSTAMP:20261029T171407Z
+DTSTAMP:20261030T003246Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:Seller's Disclosure Received — 6115 Green Glade Dr\, Whitestown\, 
@@ -66,7 +66,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:dee-labeur-D6AVED8L1f8YXaj44fykTQ-inspection-response-deadline@portal.
  boughtwithscott.com
-DTSTAMP:20261029T171407Z
+DTSTAMP:20261030T003246Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
 SUMMARY:Inspection Response Deadline — 6115 Green Glade Dr\, Whitestown\, 
@@ -76,13 +76,13 @@ DESCRIPTION:Upcoming — https://dpuphi1938.github.io/client-portal-pages/de
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:dee-labeur-D6AVED8L1f8YXaj44fykTQ-hoa-documents-received@portal.bought
- withscott.com
-DTSTAMP:20261029T171407Z
-DTSTART;VALUE=DATE:20261026
-DTEND;VALUE=DATE:20261027
-SUMMARY:HOA Documents Received — 6115 Green Glade Dr\, Whitestown\, IN 460
- 75
+UID:dee-labeur-D6AVED8L1f8YXaj44fykTQ-hoa-document-deadline@portal.boughtw
+ ithscott.com
+DTSTAMP:20261030T003246Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:HOA Document Deadline — 6115 Green Glade Dr\, Whitestown\, IN 4607
+ 5
 DESCRIPTION:Done — https://dpuphi1938.github.io/client-portal-pages/dee-la
  beur-D6AVED8L1f8YXaj44fykTQ/
 STATUS:CONFIRMED
