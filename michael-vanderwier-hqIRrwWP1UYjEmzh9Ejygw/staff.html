@@ -320,15 +320,15 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 
     <div class="staff-section">
       <h3>Note From Agent</h3>
-      <div class="staff-current">Active listing, no accepted offer yet. Price was reduced from $360,000 to $350,000 on 9/23/2026. A lowball all-cash offer ($250,000) came in 9/7/2026 and was declined -- not pursued further.</div>
-      <textarea id="note-input">Active listing, no accepted offer yet. Price was reduced from $360,000 to $350,000 on 9/23/2026. A lowball all-cash offer ($250,000) came in 9/7/2026 and was declined -- not pursued further.</textarea>
+      <div class="staff-current">Under contract to Maria Padua (buyer&#x27;s agent Jimmy Ondecko, FC Tucker) as of 11/1/2026 after two rounds of counters. Closing targeted 12/2/2026 through Foundation Title; lender is Edward Blanco at Bank of America.</div>
+      <textarea id="note-input">Under contract to Maria Padua (buyer&#x27;s agent Jimmy Ondecko, FC Tucker) as of 11/1/2026 after two rounds of counters. Closing targeted 12/2/2026 through Foundation Title; lender is Edward Blanco at Bank of America.</textarea>
       <button class="staff-btn" id="note-btn" onclick="submitStaff('note_set', {text: document.getElementById('note-input').value}, document.getElementById('note-msg'), document.getElementById('note-btn'))">Save</button>
       <div class="add-form-msg" id="note-msg" hidden></div>
     </div>
 
     <div class="staff-section">
       <h3>Milestones</h3>
-      <ul class="staff-list"><li><input type="checkbox" class="staff-milestone-toggle" id="ms-0" checked data-label="Listed" data-date="09/04/2026"><span class="staff-item-label">Listed</span><span class="staff-item-meta">09/04/2026</span></li><li><input type="checkbox" class="staff-milestone-toggle" id="ms-1" checked data-label="Price Reduced to $350,000" data-date="09/23/2026"><span class="staff-item-label">Price Reduced to $350,000</span><span class="staff-item-meta">09/23/2026</span></li><li><input type="checkbox" class="staff-milestone-toggle" id="ms-2" checked data-label="Under Contract" data-date="11/01/2026"><span class="staff-item-label">Under Contract</span><span class="staff-item-meta">11/01/2026</span></li><li><input type="checkbox" class="staff-milestone-toggle" id="ms-3" checked data-label="Closing" data-date="12/02/2026"><span class="staff-item-label">Closing</span><span class="staff-item-meta">12/02/2026</span></li></ul>
+      <ul class="staff-list"><li><input type="checkbox" class="staff-milestone-toggle" id="ms-0" checked data-label="Listed" data-date="09/04/2026"><span class="staff-item-label">Listed</span><span class="staff-item-meta">09/04/2026</span></li><li><input type="checkbox" class="staff-milestone-toggle" id="ms-1" checked data-label="Price Reduced to $350,000" data-date="09/23/2026"><span class="staff-item-label">Price Reduced to $350,000</span><span class="staff-item-meta">09/23/2026</span></li><li><input type="checkbox" class="staff-milestone-toggle" id="ms-2" checked data-label="Under Contract" data-date="11/01/2026"><span class="staff-item-label">Under Contract</span><span class="staff-item-meta">11/01/2026</span></li><li><input type="checkbox" class="staff-milestone-toggle" id="ms-3"  data-label="Closing" data-date="12/02/2026"><span class="staff-item-label">Closing</span><span class="staff-item-meta">12/02/2026</span></li></ul>
       <div class="staff-row">
         <label>Label<input type="text" id="ms-new-label" placeholder="e.g. Inspection Response Due"></label>
         <label>Date<input type="text" id="ms-new-date" placeholder="MM/DD/YYYY"></label>

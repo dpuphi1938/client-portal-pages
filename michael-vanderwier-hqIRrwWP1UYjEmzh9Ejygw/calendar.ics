@@ -8,7 +8,7 @@ X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:michael-vanderwier-hqIRrwWP1UYjEmzh9Ejygw-listed@portal.boughtwithscot
  t.com
-DTSTAMP:20261102T181940Z
+DTSTAMP:20261102T182023Z
 DTSTART;VALUE=DATE:20260904
 DTEND;VALUE=DATE:20260905
 SUMMARY:Listed — 10764 Pimlico Cir
@@ -19,7 +19,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:michael-vanderwier-hqIRrwWP1UYjEmzh9Ejygw-price-reduced-to-350-000@por
  tal.boughtwithscott.com
-DTSTAMP:20261102T181940Z
+DTSTAMP:20261102T182023Z
 DTSTART;VALUE=DATE:20260923
 DTEND;VALUE=DATE:20260924
 SUMMARY:Price Reduced to $350\,000 — 10764 Pimlico Cir
@@ -30,7 +30,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:michael-vanderwier-hqIRrwWP1UYjEmzh9Ejygw-under-contract@portal.bought
  withscott.com
-DTSTAMP:20261102T181940Z
+DTSTAMP:20261102T182023Z
 DTSTART;VALUE=DATE:20261101
 DTEND;VALUE=DATE:20261102
 SUMMARY:Under Contract — 10764 Pimlico Cir
@@ -41,12 +41,12 @@ END:VEVENT
 BEGIN:VEVENT
 UID:michael-vanderwier-hqIRrwWP1UYjEmzh9Ejygw-closing@portal.boughtwithsco
  tt.com
-DTSTAMP:20261102T181940Z
+DTSTAMP:20261102T182023Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 SUMMARY:Closing — 10764 Pimlico Cir
-DESCRIPTION:Done — https://dpuphi1938.github.io/client-portal-pages/michae
- l-vanderwier-hqIRrwWP1UYjEmzh9Ejygw/
+DESCRIPTION:Upcoming — https://dpuphi1938.github.io/client-portal-pages/mi
+ chael-vanderwier-hqIRrwWP1UYjEmzh9Ejygw/
 STATUS:CONFIRMED
 END:VEVENT
 END:VCALENDAR
