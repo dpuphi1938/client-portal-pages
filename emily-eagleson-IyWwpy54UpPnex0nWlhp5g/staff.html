@@ -318,16 +318,16 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 
     <div class="staff-section">
       <h3>Status Summary</h3>
-      <div class="staff-current">Under contract with Lennar at $293,000 as of 10/4/2026 (Ashton Place Duplex, Homesite 146A, Roxbury plan). Closing targeted November 20, 2026, tied to the Stones Ferry sale.</div>
-      <textarea id="status-summary-input">Under contract with Lennar at $293,000 as of 10/4/2026 (Ashton Place Duplex, Homesite 146A, Roxbury plan). Closing targeted November 20, 2026, tied to the Stones Ferry sale.</textarea>
+      <div class="staff-current">Under contract with Lennar at $293,000 (Ashton Place Duplex, Homesite 146A, Roxbury plan). Mortgage contingency met -- lender is waiting on the preliminary settlement statement from the Stones Ferry sale to satisfy the last condition for final loan approval.</div>
+      <textarea id="status-summary-input">Under contract with Lennar at $293,000 (Ashton Place Duplex, Homesite 146A, Roxbury plan). Mortgage contingency met -- lender is waiting on the preliminary settlement statement from the Stones Ferry sale to satisfy the last condition for final loan approval.</textarea>
       <button class="staff-btn" id="status-summary-btn" onclick="submitStaff('status_summary_set', {text: document.getElementById('status-summary-input').value}, document.getElementById('status-summary-msg'), document.getElementById('status-summary-btn'))">Save</button>
       <div class="add-form-msg" id="status-summary-msg" hidden></div>
     </div>
 
     <div class="staff-section">
       <h3>Note From Agent</h3>
-      <div class="staff-current">New-construction purchase with Lennar at 4312 Garden Trace Drive (Ashton Place Duplex, Homesite 146A, plan Roxbury). Price $293,000, fully executed 10/4/2026. Home-to-Close Contingency ties this closing to the sale of 9348 Stones Ferry Way -- both close 11/20/2026. No separate loan-approval deadline found in writing yet; ask lender Lorraine Jones (Lennar Mortgage) if one applies.</div>
-      <textarea id="note-input">New-construction purchase with Lennar at 4312 Garden Trace Drive (Ashton Place Duplex, Homesite 146A, plan Roxbury). Price $293,000, fully executed 10/4/2026. Home-to-Close Contingency ties this closing to the sale of 9348 Stones Ferry Way -- both close 11/20/2026. No separate loan-approval deadline found in writing yet; ask lender Lorraine Jones (Lennar Mortgage) if one applies.</textarea>
+      <div class="staff-current">New-construction purchase with Lennar at 4312 Garden Trace Drive (Ashton Place Duplex, Homesite 146A, plan Roxbury). Price $293,000, fully executed 10/4/2026. Home-to-Close Contingency ties this closing to the sale of 9348 Stones Ferry Way. Mortgage contingency met 11/7/2026 -- lender&#x27;s last condition for final approval is the preliminary settlement statement from the Stones Ferry closing, still pending. FLAG: Stones Ferry&#x27;s closing just moved from 11/17 to 11/18/2026 (8:30am) -- this purchase&#x27;s own Closing milestone still shows 11/20/2026 and likely needs to move to match once Scott confirms the exact date with Lennar/Patti.</div>
+      <textarea id="note-input">New-construction purchase with Lennar at 4312 Garden Trace Drive (Ashton Place Duplex, Homesite 146A, plan Roxbury). Price $293,000, fully executed 10/4/2026. Home-to-Close Contingency ties this closing to the sale of 9348 Stones Ferry Way. Mortgage contingency met 11/7/2026 -- lender&#x27;s last condition for final approval is the preliminary settlement statement from the Stones Ferry closing, still pending. FLAG: Stones Ferry&#x27;s closing just moved from 11/17 to 11/18/2026 (8:30am) -- this purchase&#x27;s own Closing milestone still shows 11/20/2026 and likely needs to move to match once Scott confirms the exact date with Lennar/Patti.</textarea>
       <button class="staff-btn" id="note-btn" onclick="submitStaff('note_set', {text: document.getElementById('note-input').value}, document.getElementById('note-msg'), document.getElementById('note-btn'))">Save</button>
       <div class="add-form-msg" id="note-msg" hidden></div>
     </div>
