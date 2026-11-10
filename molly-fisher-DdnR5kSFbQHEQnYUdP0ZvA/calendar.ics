@@ -1,0 +1,78 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Scott White Transaction Portal//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:5705 N Alton Avenue\, Indianapolis\, IN 46228 Transaction Tim
+ eline
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:molly-fisher-DdnR5kSFbQHEQnYUdP0ZvA-under-contract@portal.boughtwithsc
+ ott.com
+DTSTAMP:20261110T155146Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Under Contract — 5705 N Alton Avenue\, Indianapolis\, IN 46228
+DESCRIPTION:Done — https://dpuphi1938.github.io/client-portal-pages/molly-
+ fisher-DdnR5kSFbQHEQnYUdP0ZvA/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:molly-fisher-DdnR5kSFbQHEQnYUdP0ZvA-earnest-money-due-3-000@portal.bou
+ ghtwithscott.com
+DTSTAMP:20261110T155146Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Earnest Money Due ($3\,000) — 5705 N Alton Avenue\, Indianapolis\,
+  IN 46228
+DESCRIPTION:Done — https://dpuphi1938.github.io/client-portal-pages/molly-
+ fisher-DdnR5kSFbQHEQnYUdP0ZvA/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:molly-fisher-DdnR5kSFbQHEQnYUdP0ZvA-financing-application-deadline@por
+ tal.boughtwithscott.com
+DTSTAMP:20261110T155146Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Financing Application Deadline — 5705 N Alton Avenue\, Indianapoli
+ s\, IN 46228
+DESCRIPTION:Upcoming — https://dpuphi1938.github.io/client-portal-pages/mo
+ lly-fisher-DdnR5kSFbQHEQnYUdP0ZvA/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:molly-fisher-DdnR5kSFbQHEQnYUdP0ZvA-inspection-response-deadline@porta
+ l.boughtwithscott.com
+DTSTAMP:20261110T155146Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Inspection Response Deadline — 5705 N Alton Avenue\, Indianapolis\
+ , IN 46228
+DESCRIPTION:Upcoming — https://dpuphi1938.github.io/client-portal-pages/mo
+ lly-fisher-DdnR5kSFbQHEQnYUdP0ZvA/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:molly-fisher-DdnR5kSFbQHEQnYUdP0ZvA-loan-approval-deadline@portal.boug
+ htwithscott.com
+DTSTAMP:20261110T155146Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:Loan Approval Deadline — 5705 N Alton Avenue\, Indianapolis\, IN 4
+ 6228
+DESCRIPTION:Upcoming — https://dpuphi1938.github.io/client-portal-pages/mo
+ lly-fisher-DdnR5kSFbQHEQnYUdP0ZvA/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:molly-fisher-DdnR5kSFbQHEQnYUdP0ZvA-closing@portal.boughtwithscott.com
+DTSTAMP:20261110T155146Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:Closing — 5705 N Alton Avenue\, Indianapolis\, IN 46228
+DESCRIPTION:Upcoming — https://dpuphi1938.github.io/client-portal-pages/mo
+ lly-fisher-DdnR5kSFbQHEQnYUdP0ZvA/
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
