@@ -173,6 +173,9 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 .staff-row label{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;color:var(--slate)}
 .staff-btn{align-self:flex-start;background:var(--red);color:var(--white);border:none;border-radius:8px;padding:8px 16px;font-weight:700;font-size:12.5px;cursor:pointer;margin-top:2px}
 .staff-btn:disabled{opacity:.6;cursor:default}
+.staff-optional-hint{color:var(--slate);font-size:12.5px;margin-bottom:10px}
+.staff-optional-list li{flex-direction:column;align-items:stretch;gap:8px}
+.staff-optional-reason{font-size:13px;color:var(--charcoal)}
 
 .countdown{background:linear-gradient(135deg,var(--ink),var(--charcoal));border-radius:var(--radius);padding:18px 20px;margin-bottom:20px;text-align:center;box-shadow:var(--shadow-hover)}
 .countdown .cd-num{font-size:40px;font-weight:800;color:var(--white);line-height:1;letter-spacing:-.02em}
@@ -326,6 +329,8 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
       <input type="password" id="staff-passcode" placeholder="Enter passcode (saved on this device)">
     </div>
 
+    
+
     <div class="staff-section">
       <h3>Status Summary</h3>
       <div class="staff-current">Under contract with Steele Seei &amp; Ashley Seei at $515,000 (accepted 11/02/2026). Inspection resolved 11/10/2026: sellers are giving an additional $5,000 closing cost credit in lieu of repairs, accepted by the buyers. Conventional financing through Matt Denig, Fairway Independent Mortgage. Closing moved up to November 25, 2026 through Foundation Title.</div>
@@ -442,6 +447,13 @@ Array.prototype.slice.call(document.querySelectorAll('.staff-todo-toggle')).forE
   box.addEventListener('change', function(){
     submitStaff('todo_set', {label: box.dataset.label, due: box.dataset.due || null, done: box.checked},
       document.getElementById('todos-msg'), box);
+  });
+});
+Array.prototype.slice.call(document.querySelectorAll('.staff-optional-btn')).forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var fields;
+    try { fields = JSON.parse(btn.dataset.fields); } catch(e) { fields = {}; }
+    submitStaff(btn.dataset.kind, fields, document.getElementById(btn.id.replace('-btn', '-msg')), btn);
   });
 });
 
