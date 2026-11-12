@@ -173,6 +173,9 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 .staff-row label{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;color:var(--slate)}
 .staff-btn{align-self:flex-start;background:var(--red);color:var(--white);border:none;border-radius:8px;padding:8px 16px;font-weight:700;font-size:12.5px;cursor:pointer;margin-top:2px}
 .staff-btn:disabled{opacity:.6;cursor:default}
+.staff-optional-hint{color:var(--slate);font-size:12.5px;margin-bottom:10px}
+.staff-optional-list li{flex-direction:column;align-items:stretch;gap:8px}
+.staff-optional-reason{font-size:13px;color:var(--charcoal)}
 
 .countdown{background:linear-gradient(135deg,var(--ink),var(--charcoal));border-radius:var(--radius);padding:18px 20px;margin-bottom:20px;text-align:center;box-shadow:var(--shadow-hover)}
 .countdown .cd-num{font-size:40px;font-weight:800;color:var(--white);line-height:1;letter-spacing:-.02em}
@@ -326,6 +329,8 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
       <input type="password" id="staff-passcode" placeholder="Enter passcode (saved on this device)">
     </div>
 
+    
+
     <div class="staff-section">
       <h3>Status Summary</h3>
       <div class="staff-current">Under contract with Lennar at $293,000 (Ashton Place Duplex, Homesite 146A, Roxbury plan). Appraisal came in at value 11/9. Walkthrough/orientation completed 11/10 -- a few items came up that Lennar is correcting before the final walkthrough. Final walkthrough 8:00 AM and closing 10:00 AM on November 18, 2026, right after the Stones Ferry sale closes.</div>
@@ -442,6 +447,13 @@ Array.prototype.slice.call(document.querySelectorAll('.staff-todo-toggle')).forE
   box.addEventListener('change', function(){
     submitStaff('todo_set', {label: box.dataset.label, due: box.dataset.due || null, done: box.checked},
       document.getElementById('todos-msg'), box);
+  });
+});
+Array.prototype.slice.call(document.querySelectorAll('.staff-optional-btn')).forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var fields;
+    try { fields = JSON.parse(btn.dataset.fields); } catch(e) { fields = {}; }
+    submitStaff(btn.dataset.kind, fields, document.getElementById(btn.id.replace('-btn', '-msg')), btn);
   });
 });
 
