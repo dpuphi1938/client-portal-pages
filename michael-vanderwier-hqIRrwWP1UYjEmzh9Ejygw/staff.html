@@ -329,12 +329,12 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
       <input type="password" id="staff-passcode" placeholder="Enter passcode (saved on this device)">
     </div>
 
-    <div class="staff-section"><h3>Today&rsquo;s Optional Review Items</h3><div class="staff-optional-hint">From the daily monitor &mdash; judgment calls, not auto-applied like Recommended items. Review each, then click Apply.</div><ul class="staff-list staff-optional-list"><li class="staff-optional-row"><div class="staff-optional-reason">the page still says it&#x27;s under contract. This version is updated to say the check is being mailed.</div><button class="staff-btn staff-optional-btn" id="opt-0-btn" data-kind="status_summary_set" data-fields="{&quot;text&quot;: &quot;The purchase agreement with Maria Padua was mutually released on 11/14/2026 after the buyer&#x27;s inspection. Per the signed release, the earnest money is being returned to you, and a check is being mailed to you. Scott will follow up with you on next steps for the listing.&quot;}">Apply</button><div class="add-form-msg" id="opt-0-msg" hidden></div></li></ul></div>
+    
 
     <div class="staff-section">
       <h3>Status Summary</h3>
-      <div class="staff-current">Under contract to Maria Padua (buyer&#x27;s agent Jimmy Ondecko, FC Tucker) at $335,000 final accepted terms (after two counters) as of 11/1/2026. Earnest money $3,000 received. Still waiting on the buyer&#x27;s inspection response (due 11/13). Possession at closing. Closing on or before December 2, 2026 through Foundation Title.</div>
-      <textarea id="status-summary-input">Under contract to Maria Padua (buyer&#x27;s agent Jimmy Ondecko, FC Tucker) at $335,000 final accepted terms (after two counters) as of 11/1/2026. Earnest money $3,000 received. Still waiting on the buyer&#x27;s inspection response (due 11/13). Possession at closing. Closing on or before December 2, 2026 through Foundation Title.</textarea>
+      <div class="staff-current">The purchase agreement with Maria Padua was mutually released on 11/14/2026 after the buyer&#x27;s inspection. Per the signed release, the earnest money is being returned to you, and a check is being mailed to you. Scott will follow up with you on next steps for the listing.</div>
+      <textarea id="status-summary-input">The purchase agreement with Maria Padua was mutually released on 11/14/2026 after the buyer&#x27;s inspection. Per the signed release, the earnest money is being returned to you, and a check is being mailed to you. Scott will follow up with you on next steps for the listing.</textarea>
       <button class="staff-btn" id="status-summary-btn" onclick="submitStaff('status_summary_set', {text: document.getElementById('status-summary-input').value}, document.getElementById('status-summary-msg'), document.getElementById('status-summary-btn'))">Save</button>
       <div class="add-form-msg" id="status-summary-msg" hidden></div>
     </div>
