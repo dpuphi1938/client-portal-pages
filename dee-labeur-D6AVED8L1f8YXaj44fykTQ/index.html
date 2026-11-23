@@ -239,6 +239,23 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
 .as-delta.bad{color:var(--bad)}
 .as-delta.flat{color:var(--slate)}
 .area-stats-secondary{display:flex;justify-content:space-between;font-size:12.5px;color:var(--charcoal);margin-bottom:20px}
+
+.ideal-cal{background:var(--white);border:1px solid var(--cloud);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);margin-bottom:20px}
+.ideal-cal-head{font-size:14.5px;font-weight:600;color:var(--charcoal);margin-bottom:8px}
+.ideal-cal-note{font-size:12.5px;color:var(--slate);line-height:1.5;margin-bottom:12px}
+.ideal-cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-top:4px}
+.ideal-cal-dow{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--slate);text-align:center;padding-bottom:4px}
+.ideal-cal-day{position:relative;aspect-ratio:1;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:12.5px;font-weight:600;color:var(--charcoal);background:var(--paper)}
+.ideal-cal-day.pad{background:transparent}
+.ideal-cal-day.today{box-shadow:inset 0 0 0 2px var(--gold)}
+.ideal-cal-day.target{background:var(--red);color:var(--white)}
+.ideal-cal-day.lease:not(.target){box-shadow:inset 0 0 0 2px var(--bad);color:var(--bad)}
+.ideal-cal-num{line-height:1}
+.ideal-cal-tag{position:absolute;bottom:-2px;font-size:7px;font-weight:700;text-transform:uppercase;letter-spacing:.02em;white-space:nowrap}
+.ideal-cal-legend{display:flex;gap:16px;margin-top:12px;font-size:11.5px;color:var(--slate)}
+.ideal-cal-legend-item.target{color:var(--red-dark)}
+.ideal-cal-legend-item.lease{color:var(--bad)}
+.ideal-cal-offgrid{font-size:12.5px;font-weight:600;color:var(--bad);margin-top:12px}
 </style>
 </head>
 <body>
@@ -382,6 +399,12 @@ h2::after{content:"";flex:1;height:1px;background:var(--cloud);margin-left:2px}
     </div>
     <a class="cal-subscribe" href="webcal://dpuphi1938.github.io/client-portal-pages/dee-labeur-D6AVED8L1f8YXaj44fykTQ/calendar.ics">&#128197; Subscribe to this timeline in your calendar &rarr;</a>
     <ul class="timeline"><li class="tstep done"><div class="tdot">&#10003;</div><div><div class="tlabel">Counter Offer Accepted</div><div class="tdate">10/23/2026</div></div></li><li class="tstep done"><div class="tdot">&#10003;</div><div><div class="tlabel">Final Counter (Counter 3) Signed</div><div class="tdate">10/24/2026</div></div></li><li class="tstep done"><div class="tdot">&#10003;</div><div><div class="tlabel">Under Contract</div><div class="tdate">10/26/2026</div></div></li><li class="tstep done"><div class="tdot">&#10003;</div><div><div class="tlabel">Seller&#x27;s Disclosure Received</div><div class="tdate">10/27/2026</div></div></li><li class="tstep done"><div class="tdot">&#10003;</div><div><div class="tlabel">HOA Document Deadline</div><div class="tdate">10/27/2026</div></div></li><li class="tstep done"><div class="tdot">&#10003;</div><div><div class="tlabel">Buyer Inspection Response Submitted</div><div class="tdate">11/01/2026</div></div></li><li class="tstep done"><div class="tdot">&#10003;</div><div><div class="tlabel">Inspection Response Deadline</div><div class="tdate">11/08/2026</div></div></li><li class="tstep done"><div class="tdot">&#10003;</div><div><div class="tlabel">Seller&#x27;s Inspection Reply Deadline</div><div class="tdate">11/09/2026</div></div></li><li class="tstep done"><div class="tdot">&#10003;</div><div><div class="tlabel">Buyer&#x27;s Reply to Seller&#x27;s Inspection Response</div><div class="tdate">11/13/2026</div></div></li><li class="tstep done"><div class="tdot">&#10003;</div><div><div class="tlabel">Inspection Fully Resolved (HVAC Confirmed Working)</div><div class="tdate">11/20/2026</div></div></li><li class="tstep"><div class="tdot"></div><div><div class="tlabel">Closing</div><div class="tdate">11/30/2026<a class="tgcal" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Closing+%E2%80%94+6115+Green+Glade+Dr%2C+Whitestown%2C+IN+46075&amp;dates=20261130%2F20261201&amp;details=From+your+transaction+portal%3A+https%3A%2F%2Fdpuphi1938.github.io%2Fclient-portal-pages%2Fdee-labeur-D6AVED8L1f8YXaj44fykTQ%2F" target="_blank" rel="noopener">+ Calendar</a></div></div></li></ul>
+
+    
+
+    
+
+    
 
     <h2>Your To-Dos</h2><p class="section-intro">Action items specifically for you, with due dates. Check them off as you go &mdash; your progress is saved on this device.</p><ul class="todo-list"><li class="todo-row soon" id="row-todo-0" data-label="Let us know your title preference (e.g. joint tenants with right of survivorship)"><input type="checkbox" id="todo-0" ><label for="todo-0"><div class="todo-top"><span class="todo-label">Let us know your title preference (e.g. joint tenants with right of survivorship)</span><span class="todo-due">Due soon &middot; 11/23/2026</span></div></label></li></ul>
 
