@@ -1,0 +1,114 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Scott White Transaction Portal//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:1417 Royal Lake Drive\, Indianapolis\, IN 46228 Transaction T
+ imeline
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:molly-fisher-jNOASA6lqF6SvvXAW6NR5g-under-contract@portal.boughtwithsc
+ ott.com
+DTSTAMP:20261127T104305Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Under Contract — 1417 Royal Lake Drive\, Indianapolis\, IN 46228
+DESCRIPTION:Done — https://dpuphi1938.github.io/client-portal-pages/molly-
+ fisher-jNOASA6lqF6SvvXAW6NR5g/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:molly-fisher-jNOASA6lqF6SvvXAW6NR5g-counter-1-signed-price-348-000-con
+ cessions-5-000@portal.boughtwithscott.com
+DTSTAMP:20261127T104305Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Counter 1 Signed (Price $348\,000\, Concessions $5\,000) — 1417 Ro
+ yal Lake Drive\, Indianapolis\, IN 46228
+DESCRIPTION:Done — https://dpuphi1938.github.io/client-portal-pages/molly-
+ fisher-jNOASA6lqF6SvvXAW6NR5g/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:molly-fisher-jNOASA6lqF6SvvXAW6NR5g-counter-2-signed-price-345-000-con
+ cessions-8-000@portal.boughtwithscott.com
+DTSTAMP:20261127T104305Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Counter 2 Signed (Price $345\,000\, Concessions $8\,000) — 1417 Ro
+ yal Lake Drive\, Indianapolis\, IN 46228
+DESCRIPTION:Done — https://dpuphi1938.github.io/client-portal-pages/molly-
+ fisher-jNOASA6lqF6SvvXAW6NR5g/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:molly-fisher-jNOASA6lqF6SvvXAW6NR5g-final-counter-counter-3-signed-acc
+ epted-terms@portal.boughtwithscott.com
+DTSTAMP:20261127T104305Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Final Counter (Counter 3) Signed - Accepted Terms — 1417 Royal Lak
+ e Drive\, Indianapolis\, IN 46228
+DESCRIPTION:Done — https://dpuphi1938.github.io/client-portal-pages/molly-
+ fisher-jNOASA6lqF6SvvXAW6NR5g/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:molly-fisher-jNOASA6lqF6SvvXAW6NR5g-seller-s-disclosure-received@porta
+ l.boughtwithscott.com
+DTSTAMP:20261127T104305Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Seller's Disclosure Received — 1417 Royal Lake Drive\, Indianapoli
+ s\, IN 46228
+DESCRIPTION:Done — https://dpuphi1938.github.io/client-portal-pages/molly-
+ fisher-jNOASA6lqF6SvvXAW6NR5g/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:molly-fisher-jNOASA6lqF6SvvXAW6NR5g-earnest-money-due-3-000@portal.bou
+ ghtwithscott.com
+DTSTAMP:20261127T104305Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Earnest Money Due ($3\,000) — 1417 Royal Lake Drive\, Indianapolis
+ \, IN 46228
+DESCRIPTION:Done — https://dpuphi1938.github.io/client-portal-pages/molly-
+ fisher-jNOASA6lqF6SvvXAW6NR5g/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:molly-fisher-jNOASA6lqF6SvvXAW6NR5g-hoa-document-deadline@portal.bough
+ twithscott.com
+DTSTAMP:20261127T104305Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:HOA Document Deadline — 1417 Royal Lake Drive\, Indianapolis\, IN 
+ 46228
+DESCRIPTION:Done — https://dpuphi1938.github.io/client-portal-pages/molly-
+ fisher-jNOASA6lqF6SvvXAW6NR5g/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:molly-fisher-jNOASA6lqF6SvvXAW6NR5g-inspection-response-deadline@porta
+ l.boughtwithscott.com
+DTSTAMP:20261127T104305Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Inspection Response Deadline — 1417 Royal Lake Drive\, Indianapoli
+ s\, IN 46228
+DESCRIPTION:Done — https://dpuphi1938.github.io/client-portal-pages/molly-
+ fisher-jNOASA6lqF6SvvXAW6NR5g/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:molly-fisher-jNOASA6lqF6SvvXAW6NR5g-closing@portal.boughtwithscott.com
+DTSTAMP:20261127T104305Z
+DTSTART;VALUE=DATE:20261229
+DTEND;VALUE=DATE:20261230
+SUMMARY:Closing — 1417 Royal Lake Drive\, Indianapolis\, IN 46228
+DESCRIPTION:Done — https://dpuphi1938.github.io/client-portal-pages/molly-
+ fisher-jNOASA6lqF6SvvXAW6NR5g/
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
